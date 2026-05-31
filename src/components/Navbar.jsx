@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 const LOGO = "https://res.cloudinary.com/dagt2a1w0/image/upload/v1780104046/ChatGPT_Image_May_30_2026_01_26_42_AM_brxysy.png";
-const LINKS = [{ label: "About", path: "/about" }, { label: "Services", path: "/services" }, { label: "Contact", path: "/contact" }];
+const LINKS = [{ label: "About", path: "/about" }, { label: "Services", path: "/services" }, { label: "Pricing", path: "/pricing" }, { label: "Contact", path: "/contact" }];
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
