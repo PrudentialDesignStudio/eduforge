@@ -7,13 +7,23 @@ export default function Footer() {
   return (
     <footer className="footer">
       <div className="ef-container">
+        {/* Payment protection bar */}
+        <div style={{ borderBottom: "1px solid rgba(255,255,255,0.08)", paddingBottom: 32, marginBottom: 64, display: "flex", flexWrap: "wrap", gap: 32, alignItems: "center", justifyContent: "space-between" }}>
+          <div style={{ fontFamily: "var(--font-serif)", fontSize: 18, fontStyle: "italic", color: "rgba(255,255,255,0.6)", maxWidth: 420 }}>
+            "We never ask for full payment upfront. 50% to start, 50% on delivery."
+          </div>
+          <div style={{ display: "flex", flexWrap: "wrap", gap: 16 }}>
+            {["50/50 Payment", "48hr Final Payment", "24hr Response", "No Hidden Fees"].map(t => (
+              <span key={t} style={{ fontFamily: "var(--font-mono)", fontSize: 10, color: "var(--gold)", border: "1px solid rgba(201,168,76,0.3)", borderRadius: 100, padding: "6px 14px", letterSpacing: "0.1em" }}>{t}</span>
+            ))}
+          </div>
+        </div>
         <div className="footer-top">
           <div>
             <img src={LOGO} alt="EduForge" style={{ height: 48, marginBottom: 16, filter: "brightness(0) invert(1) opacity(0.85)", objectFit: "contain" }} onError={e => e.target.style.display = "none"} />
             <div className="footer-brand-name">EduForge</div>
-            <div className="footer-brand-sub">Web Studio · Abuja</div>
-            <p className="footer-brand-desc">Fresh web studio from Abuja. Clean, real websites for businesses and schools across Nigeria. No fake numbers, no shortcuts.</p>
-            {/* Instagram CTA — same card structure as Prudential's Facebook CTA */}
+            <div className="footer-brand-sub">Web Studio · Abuja, Nigeria</div>
+            <p className="footer-brand-desc">Custom-built websites for Nigerian businesses. React-powered, Paystack-ready, honest pricing. One project at a time.</p>
             <a href={IG} target="_blank" rel="noopener noreferrer" className="footer-ig-cta">
               <div className="footer-ig-icon"><IgIcon /></div>
               <div className="footer-ig-text">
@@ -28,25 +38,25 @@ export default function Footer() {
             <Link to="/">Home</Link>
             <Link to="/about">About</Link>
             <Link to="/services">Services</Link>
-            <Link to="/pricing">Pricing</Link>
             <Link to="/contact">Contact</Link>
+            <Link to="/start">Start a Project</Link>
           </div>
           <div className="footer-col">
             <h4>Services</h4>
-            {["Website Design","Landing Pages","E-commerce","School Websites","Monthly Maintenance","Logo Design"].map(s => <span key={s} style={{ display: "block", fontSize: 14, color: "rgba(255,255,255,0.55)", marginBottom: 12 }}>{s}</span>)}
+            {["Website Design","Landing Pages","E-commerce","School Websites","Monthly Maintenance","Logo Design"].map(s => <span key={s} style={{ display: "block", fontSize: 14, color: "rgba(255,255,255,0.55)", marginBottom: 12, fontWeight: 500 }}>{s}</span>)}
           </div>
           <div className="footer-col">
-            <h4>Our Values</h4>
+            <h4>Our Promise</h4>
             <div className="footer-values-row">
-              {["Honest Work","Real Code","Built for Nigeria","Fast Delivery","Fair Pricing","Long-term"].map(v => <span key={v} className="footer-val-tag">{v}</span>)}
+              {["Honest Work","Real Code","Built for Nigeria","Fast Delivery","No Scams","Long-term Support"].map(v => <span key={v} className="footer-val-tag">{v}</span>)}
             </div>
             <h4 style={{ marginTop: 32 }}>Contact</h4>
             <a href={WA} target="_blank" rel="noopener noreferrer">WhatsApp: 09161103528</a>
-            <span style={{ display: "block", fontSize: 14, color: "rgba(255,255,255,0.55)", marginBottom: 12 }}>Abuja, FCT, Nigeria</span>
+            <span style={{ display: "block", fontSize: 14, color: "rgba(255,255,255,0.55)", marginBottom: 12, fontWeight: 500 }}>Abuja, FCT, Nigeria</span>
           </div>
         </div>
         <div className="footer-bottom">
-          <p>© 2025 EduForge Web Studio. All rights reserved.</p>
+          <p>© 2026 EduForge Web Studio. All rights reserved.</p>
           <p>Built by <span className="elite">EduForge Web Studio</span> · Abuja, Nigeria</p>
         </div>
       </div>

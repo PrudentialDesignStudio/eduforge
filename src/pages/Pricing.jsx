@@ -3,12 +3,12 @@ import AnimateIn from "../components/AnimateIn";
 const WA = "https://wa.me/2349161103528?text=Hi%20EduForge%2C%20I%27m%20interested%20in%20a%20website.";
 const PKG = [
   { name: "Basic", price: "₦80k", desc: "For small businesses and individuals who need a clean online presence.", features: ["Up to 5 pages","Mobile responsive","WhatsApp contact","Social media links","Basic SEO","30 days support"], excl: ["E-commerce","Blog section"], featured: false },
-  { name: "Standard", price: "₦150k", desc: "For businesses that want more features and a more complete digital identity.", features: ["Up to 10 pages","Everything in Basic","Gallery section","Blog / news section","Google Maps","Custom animations","SEO optimisation","60 days support"], excl: [], featured: true },
+  { name: "Standard", price: "₦120k", desc: "For businesses that want more features and a more complete digital identity.", features: ["Up to 10 pages","Everything in Basic","Gallery section","Blog / news section","Google Maps","Custom animations","SEO optimisation","60 days support"], excl: [], featured: true },
   { name: "Premium", price: "₦300k", desc: "Full-featured with payment integration, online store, or advanced features.", features: ["Unlimited pages","Everything in Standard","Paystack / e-commerce","Admin dashboard","Order management","Priority support","90 days support"], excl: [], featured: false },
 ];
 const FAQS = [
   { q: "Do I pay everything upfront?", a: "No. We take 50% to start and 50% when the site is ready and you're happy with it. Simple." },
-  { q: "What if I need changes after launch?", a: "Every package includes free support days. After that, subscribe to our ₦20,000/month maintenance for ongoing changes." },
+  { q: "What if I need changes after launch?", a: "Every package includes free support days. After that, subscribe to our ₦15,000/month maintenance for ongoing changes." },
   { q: "Do you use Wix or WordPress?", a: "Never. We write real code — React for the frontend, Node.js for the backend. Your site is completely yours." },
   { q: "What do I need to provide?", a: "Your business name, logo if you have one, photos, and your content. We help you figure out everything else." },
   { q: "Can you host the website?", a: "Yes. We set everything up on Netlify (free) or help with paid hosting. We guide you through the whole process." },
@@ -28,7 +28,7 @@ export default function Pricing() {
       <div className="ef-container">
         <AnimateIn className="pricing-header">
           <h2>Choose your package</h2>
-          <p>All prices are one-time setup fees. Add ₦20,000/month for ongoing maintenance.</p>
+          <p>All prices are one-time setup fees. Add ₦15,000/month for ongoing maintenance.</p>
         </AnimateIn>
         <AnimateIn delay={1}>
           <div className="pricing-grid">
@@ -56,7 +56,7 @@ export default function Pricing() {
               <p style={{ fontSize: 14, color: "var(--mid)", maxWidth: 400 }}>Like your generator subscription — but for your website. Updates, fixes, content changes, and uptime monitoring.</p>
             </div>
             <div style={{ textAlign: "right" }}>
-              <div style={{ fontFamily: "var(--font-serif)", fontSize: 44, letterSpacing: "-0.04em", marginBottom: 4 }}>₦20k</div>
+              <div style={{ fontFamily: "var(--font-serif)", fontSize: 44, letterSpacing: "-0.04em", marginBottom: 4 }}>₦15k</div>
               <div style={{ fontSize: 13, color: "var(--mid)", marginBottom: 16 }}>per month</div>
               <a href={WA} target="_blank" rel="noopener noreferrer" className="btn-ghost">Add to my package</a>
             </div>
